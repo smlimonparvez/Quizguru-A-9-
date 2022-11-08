@@ -1,22 +1,26 @@
 import React from 'react';
+import { FaEye } from 'react-icons/fa';
 
 const Question = ({ questionCard }) => {
-    const { options, id, question } = questionCard;
+    const { options, question } = questionCard;
     return (
         <div className='shadow-lg mx-auto my-10 bg-slate-50 rounded w-2/4 p-10'>
-            <p>{question}</p>
+            <div className='flex justify-between align-middle mb-4'>
+                <p><span className='font-medium'>Question:</span> {question}</p>
+                <h3><FaEye></FaEye></h3>
+            </div>
             <div className=' grid lg:grid-cols-2 sm:grid-cols-1'>
                 <div className='shadow-md rounded p-5 mr-3'>
-                    <input type="checkbox"/> <label>{options[0]}</label>
+                    <input type="radio" name='answer' /> <label>{options[0]}</label>
                 </div>
                 <div className='shadow-md rounded p-5 mr-3'>
-                <input type="checkbox"/> <label>{options[1]}</label>
+                    <input type="radio" name='answer' /> <label>{options[1]}</label>
                 </div>
                 <div className='shadow-md rounded p-5 mr-3'>
-                <input type="checkbox"/> <label>{options[2]}</label>
+                    <input type="radio" name='answer' /> <label>{options[2]}</label>
                 </div>
                 <div className='shadow-md rounded p-5 mr-3'>
-                <input type="checkbox"/> <label>{options[3]}</label>
+                    <input type="radio" name='answer' /> <label>{options[3]}</label>
                 </div>
             </div>
         </div>
