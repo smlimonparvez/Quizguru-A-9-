@@ -1,23 +1,15 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Question from './Question';
 
 const QuizQuestion = () => {
     const quizQuestion = useLoaderData();
+    console.log(quizQuestion);
     return (
         <div>
             {
-                quizQuestion.map(question => {
-                    <div className='drop-shadow-md'>
-                        <h4></h4>
-                        <div className='grid grid-cols-2'>
-                            <div className='drop-shadow-md'>{question.p}</div>
-                            <div className='drop-shadow-md'></div>
-                            <div className='drop-shadow-md'></div>
-                            <div className='drop-shadow-md'></div>
-                        </div>
-                    </div>
-                })
-            }
+                quizQuestion.data.questions.map(questionCard => <Question key={questionCard.id} questionCard={questionCard}></Question>)
+            }        
         </div>
     );
 };
