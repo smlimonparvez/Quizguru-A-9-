@@ -49,16 +49,16 @@ const Question = ({ questionCard }) => {
             </div>
             <div className=' grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
                 <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker1}>
-                    <input type="radio" id='ans1' name='answer' /> <label>{options[0]}</label>
+                    <input type="radio" id='ans1' name='answer' value='ans1'/> <label>{options[0]}</label>
                 </div>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300'  onClick={answerChecker2}>
-                    <input type="radio" id='ans2' name='answer' /> <label>{options[1]}</label>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker2}>
+                    <input type="radio" id='ans2' name='answer' value='ans2'/> <label>{options[1]}</label>
                 </div>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300'  onClick={answerChecker3}>
-                    <input type="radio" id='ans3' name='answer' /> <label>{options[2]}</label>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker3}>
+                    <input type="radio" id='ans3' name='answer' value='ans3'/> <label>{options[2]}</label>
                 </div>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300'  onClick={answerChecker4}>
-                    <input type="radio" id='ans4' name='answer' /> <label>{options[3]}</label>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker4}>
+                    <input type="radio" id='ans4' name='answer' value='ans4'/> <label>{options[3]}</label>
                 </div>
             </div>
         </div>

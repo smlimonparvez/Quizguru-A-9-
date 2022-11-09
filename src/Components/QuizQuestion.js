@@ -7,6 +7,7 @@ const QuizQuestion = () => {
 
     return (
         <div>
+            <p className='text-center text-xl font-medium mt-5'>Quiz of {quizQuestion.data.name}</p>
             {
                 quizQuestion.data.questions.map(questionCard => <Question key={questionCard.id} questionCard={questionCard}></Question>)
             }        

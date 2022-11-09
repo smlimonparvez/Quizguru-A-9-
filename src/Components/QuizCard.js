@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { FaArrowRight } from 'react-icons/fa';
 
 const QuizCard = ({ quizCard }) => {
     const { id, name, logo, total } = quizCard;
@@ -10,7 +11,7 @@ const QuizCard = ({ quizCard }) => {
                 <h2 className="card-title">{name}</h2>
                 <div className="card-actions justify-end">
                     <p className='font-medium text-xl'>Total Quiz {total}</p>
-                    <button className="btn btn-primary"><Link to={`/quiz/${id}`}>Go To Quiz</Link></button>
+                    <button className="btn btn-primary"><Link className='flex' to={`/quiz/${id}`}>Go To Quiz<FaArrowRight className='ml-1'></FaArrowRight></Link></button>
                 </div>
             </div>
         </div>

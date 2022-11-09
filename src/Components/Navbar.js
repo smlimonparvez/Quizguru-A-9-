@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaBookReader } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -17,13 +18,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <Link className="btn btn-ghost normal-case text-xl" to='/home'>Quiz Guru</Link>
+        <Link className="btn btn-ghost normal-case text-xl" to='/home'>Quiz Guru<FaBookReader className="ml-1"></FaBookReader></Link>
       </div>
       <div className="navbar-end">
         <ul className="flex items-center justify-evenly font-medium mr-4 hidden lg:inline-flex">
-          <li className=" m-3"><Link to='/home'>Home</Link></li>
-          <li className=" m-3"><Link to='/analysis'>Analysis</Link></li>
-          <li className=" m-3"><Link to='/blog'>Blog</Link></li>
+          <li className="m-3"><Link to='/home'>Home</Link></li>
+          <li className="m-3"><Link to='/analysis'>Analysis</Link></li>
+          <li className="m-3"><Link to='/blog'>Blog</Link></li>
         </ul>
       </div>
     </div>
