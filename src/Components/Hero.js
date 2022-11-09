@@ -17,7 +17,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-3 my-20 ml-8 lg:ml-20'>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-8 my-20 ml-8 lg:ml-20'>
                 {
                     quizCards.data.map(quizCard => <QuizCard key={quizCard.id} quizCard={quizCard}></QuizCard>)
                 }
