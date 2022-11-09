@@ -33,7 +33,11 @@ function App() {
           },
           element:<QuizQuestion></QuizQuestion>
         },
-        { path: '/analysis', element: <Analysis></Analysis> },
+        { path: '/analysis', 
+        loader: async () => {
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+        },
+        element: <Analysis></Analysis> },
         { path: '/blog', element: <Blog></Blog> }
       ]
     },
