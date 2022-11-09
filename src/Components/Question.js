@@ -15,17 +15,17 @@ const Question = ({ questionCard }) => {
                 <h3><Link><FaEye onClick={notify}></FaEye></Link></h3>
                 <ToastContainer />
             </div>
-            <div className=' grid lg:grid-cols-2 sm:grid-cols-1'>
-                <div className='shadow-md rounded p-5 mr-3'>
+            <div className=' grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300'>
                     <input type="radio" id='ans1' name='answer' /> <label>{options[0]}</label>
                 </div>
-                <div className='shadow-md rounded p-5 mr-3'>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300'>
                     <input type="radio" id='ans2' name='answer' /> <label>{options[1]}</label>
                 </div>
-                <div className='shadow-md rounded p-5 mr-3'>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300'>
                     <input type="radio" id='ans3' name='answer' /> <label>{options[2]}</label>
                 </div>
-                <div className='shadow-md rounded p-5 mr-3'>
+                <div className='shadow-md rounded p-5 hover:bg-slate-300'>
                     <input type="radio" id='ans4' name='answer' /> <label>{options[3]}</label>
                 </div>
             </div>
