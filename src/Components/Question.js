@@ -48,17 +48,29 @@ const Question = ({ questionCard }) => {
                 <ToastContainer />
             </div>
             <div className=' grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker1}>
-                    <input type="radio" id='ans1' name='answer' value='ans1'/> <label>{options[0]}</label>
+                <div className="form-control shadow-md rounded p-5 hover:bg-slate-300">
+                    <label className="label cursor-pointer" >
+                        <input type="radio" name="answer" className="radio-xs checked:bg-blue-500" checked onClick={answerChecker1} />
+                        <span className="label-text">{options[0]}</span>
+                    </label>
                 </div>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker2}>
-                    <input type="radio" id='ans2' name='answer' value='ans2'/> <label>{options[1]}</label>
+                <div className="form-control shadow-md rounded p-5 hover:bg-slate-300">
+                    <label className="label cursor-pointer" >
+                        <input type="radio" name="answer" className="radio-xs checked:bg-blue-500" checked onClick={answerChecker2} />
+                        <span className="label-text">{options[1]}</span>
+                    </label>
                 </div>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker3}>
-                    <input type="radio" id='ans3' name='answer' value='ans3'/> <label>{options[2]}</label>
+                <div className="form-control shadow-md rounded p-5 hover:bg-slate-300">
+                    <label className="label cursor-pointer" >
+                        <input type="radio" name="answer" className="radio-xs checked:bg-blue-500" checked onClick={answerChecker3} />
+                        <span className="label-text">{options[2]}</span>
+                    </label>
                 </div>
-                <div className='shadow-md rounded p-5 hover:bg-slate-300' onClick={answerChecker4}>
-                    <input type="radio" id='ans4' name='answer' value='ans4'/> <label>{options[3]}</label>
+                <div className="form-control shadow-md rounded p-5 hover:bg-slate-300">
+                    <label className="label cursor-pointer" >
+                        <input type="radio" name="answer" className="radio-xs checked:bg-blue-500" checked onClick={answerChecker4} />
+                        <span className="label-text">{options[3]}</span>
+                    </label>
                 </div>
             </div>
         </div>
